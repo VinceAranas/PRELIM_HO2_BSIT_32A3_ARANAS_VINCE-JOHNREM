@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #166a8e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #102542;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  color: #b4b8b2;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 400px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.box h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #166a8e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #166a8e;
+}
+
+footer {
+  background-color: #102542;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  padding: 45px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 10px;
+}
+
+footer nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+footer nav a:hover {
+  color: #b4b8b2;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
+
+.hobby-button {
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 15px 30px;
+  background-color: #166a8e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hobby-button:hover {
+  background-color: #145a75;
+  transform: scale(1.1);
+}
+
+#hobbies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures full viewport height for centering */
+}
